@@ -3,6 +3,7 @@ import { DataService } from '../core/data.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { IEmployee } from '../shared/interfaces';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-employee-edit',

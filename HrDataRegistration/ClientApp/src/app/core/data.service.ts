@@ -29,7 +29,6 @@ export class DataService {
     return this.http.post(this.urlbase, employee)
       .pipe(
         map(data => {
-          console.log('customer inserted');
           return data;
         }),
         catchError(this.handleError)
