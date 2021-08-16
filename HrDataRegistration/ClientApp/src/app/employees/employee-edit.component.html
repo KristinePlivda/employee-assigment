@@ -1,0 +1,46 @@
+<div>
+  <header>
+    <h3>
+      <span class="glyphicon glyphicon-user">New Employee</span>
+    </h3>
+  </header>
+  <br />
+  <form [formGroup]="employeeForm" (ngSubmit)="submit(employeeForm)">
+    <div class="alert alert-danger" *ngIf="errorMessage != null">{{ errorMessage }}</div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" formControlName="firstName">
+    </div>
+    <div class="alert alert-danger" *ngIf="employeeForm.get('firstName').invalid && employeeForm.get('firstName').touched">
+      Please enter valid first name!
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" formControlName="lastName">
+    </div>
+    <div class="alert alert-danger" *ngIf="employeeForm.get('lastName').invalid && employeeForm.get('lastName').touched">
+      Please enter valid last name!
+    </div>
+    <div class="form-group">
+      <label for="socialSecurityNumber">Social Security Number</label>
+      <input type="text" class="form-control" id="socialSecurityNumber" formControlName="socialSecurityNumber">
+    </div>
+    <div class="alert alert-danger" *ngIf="employeeForm.get('socialSecurityNumber').touched && employeeForm.get('socialSecurityNumber').invalid">
+      <div *ngIf="employeeForm.get('socialSecurityNumber').errors?.required">Social security number is required.</div>
+      <div *ngIf="employeeForm.get('socialSecurityNumber').errors?.pattern">Please enter valid social security number.</div>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number</label>
+      <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber">
+    </div>
+    <div class="alert alert-danger" *ngIf="employeeForm.get('phoneNumber').invalid && employeeForm.get('phoneNumber').touched">
+      <div *ngIf="log(employeeForm.get('phoneNumber').errors)">Please enter valid social security number.</div>
+      Please enter valid first phone number!
+    </div>
+    <br />
+    <div class="col-md-12 text-center">
+      <button type="submit" class="btn btn-success" [disabled]="employeeForm.invalid">Add new employee</button>
+      <button class="btn btn-outline-danger" (click)="cancel()">Cancel</button>
+    </div>
+  </form>
+</div>

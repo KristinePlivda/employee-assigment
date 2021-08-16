@@ -1,0 +1,8 @@
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\bin\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.deps.json
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\bin\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.dll
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\bin\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.pdb
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\obj\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\obj\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.AssemblyInfoInputs.cache
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\obj\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.AssemblyInfo.cs
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\obj\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.dll
+C:\Users\krist\source\repos\HrDataRegistration\HrDataRegistration.DataAccess\obj\Debug\netcoreapp2.2\HrDataRegistration.DataAccess.pdb
